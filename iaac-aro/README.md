@@ -14,7 +14,7 @@ You can find here the guide:
 * how to deploy an example application.
 
 {{< admonition >}}
-The full example with all resources could be found [here](https://github.com/pajikos/iaac-aro) on GitHub.
+The full example with all resources could be found [here](https://github.com/pajikos/cloud-samples/tree/master/iaac-aro) on GitHub.
 {{< /admonition >}}
 
 ## Create Azure Red Hat OpenShift 4 (ARO) cluster
