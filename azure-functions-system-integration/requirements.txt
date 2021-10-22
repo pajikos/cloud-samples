@@ -1,0 +1,8 @@
+# Do not include azure-functions-worker as it may conflict with the Azure Functions platform
+
+azure-functions
+# azure-functions-worker
+# Additional packages
+requests==2.20.1
+# Generator of random names
+names

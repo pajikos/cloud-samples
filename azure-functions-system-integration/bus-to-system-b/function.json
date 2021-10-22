@@ -1,0 +1,25 @@
+{
+  "scriptFile": "__init__.py",
+  "entryPoint": "main",
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "system-a-in",
+      "subscriptionName": "system-b-sub",
+      "connection": "ServiceBusConnectionString"
+    },
+    {
+      "name": "mappings",
+      "type": "cosmosDB",
+      "databaseName": "azure-func-demo-db",
+      "collectionName": "mapping",
+      "createIfNotExists": "false",
+      "connectionStringSetting": "AzureCosmosDBConnectionString",
+      "id" : "SYSTEMB",
+      "partitionKey": "SYSTEMB",
+      "direction": "in"
+   }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "BASE_URL": "http://localhost:7071",
+    "FUNCTIONS_WORKER_PROCESS_COUNT":"1",
+    "PYTHON_THREADPOOL_THREAD_COUNT": "5",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=testpavelsklenar;AccountKey=xxxxx;EndpointSuffix=core.windows.net"
+  },
+  "ConnectionStrings": {
+    "ServiceBusConnectionString": "Endpoint=sb://xxxxx",
+    "AzureCosmosDBConnectionString": "AccountEndpoint=https://xxxxx"
+  }
+}
