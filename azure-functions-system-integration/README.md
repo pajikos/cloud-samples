@@ -23,7 +23,7 @@ The architecture constraints:
 * The system B may be occasionally offline, so some type of persistent bus should be used.
 
 
-![Overall architecture](resources/diagram.drawio.svg "Overall architecture")
+![Overall architecture](resources/diagram.drawio.png "Overall architecture")
 
 ## Deploy Azure Functions and related resources
 
