@@ -319,10 +319,10 @@ Our testing http-echo job is visible in Consul UI as well:
 ![consul-ui-job](resources/consul2.png "Consul UI Job Detail")
 
 ## Resources
-https://www.nomadproject.io/docs/nomad-vs-kubernetes/supplement
-https://www.nomadproject.io/docs/nomad-vs-kubernetes/alternative
-https://www.hashicorp.com/c2m
-https://www.nomadproject.io/docs/nomad-vs-kubernetes
-https://www.nomadproject.io/docs/job-specification
-https://www.nomadproject.io/docs/configuration
-https://www.consul.io/docs/discovery/dns
+- https://www.nomadproject.io/docs/nomad-vs-kubernetes/supplement
+- https://www.nomadproject.io/docs/nomad-vs-kubernetes/alternative
+- https://www.hashicorp.com/c2m
+- https://www.nomadproject.io/docs/nomad-vs-kubernetes
+- https://www.nomadproject.io/docs/job-specification
+- https://www.nomadproject.io/docs/configuration
+- https://www.consul.io/docs/discovery/dns
