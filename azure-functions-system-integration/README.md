@@ -13,6 +13,10 @@ tags:
 ## Introduction
 This simple demo shows possible integration between two systems (system A and system B) using Azure Functions.
 
+{{< admonition >}}
+The full example with all resources could be found [here](https://github.com/pajikos/cloud-samples/tree/master/azure-functions-system-integration) on GitHub.
+{{< /admonition >}}
+
 The architecture constraints:
 * All updates from the system A must be transfered into the system B
 * The system A is listening on HTTP with REST API

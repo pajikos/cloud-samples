@@ -19,6 +19,10 @@ I know this architecture is [not recommended](https://github.com/hashicorp/nomad
 Both nodes are not connected to the same network they are in west Europe but different cloud providers. To fulfill the connectivity requirements between nodes, I connect them to the same network using [Nebula](https://github.com/slackhq/nebula), a scalable overlay networking tool.
 If all nodes are visible directly, Nebula is not necessary.
 
+{{< admonition >}}
+The full example with all resources could be found [here](https://github.com/pajikos/cloud-samples/tree/master/two-node-nomad-cluster) on GitHub.
+{{< /admonition >}}
+
 ## Install Nomad and other requirements
 All steps in this section must be installed on all nodes.
 
