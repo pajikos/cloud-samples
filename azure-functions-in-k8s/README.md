@@ -27,14 +27,19 @@ You have to be logged, here is an example when using Azure Container Registry:
 # Auth with AAD accounts
 az acr login -n $ACR_NAME
 ```
+### Download Functions source code
+```bash
+git clone git@github.com:pajikos/cloud-samples.git
+cd cloud-samples/azure-functions-in-k8s
+```
 
 ### Setup your custom properties
-Edit file `.envrc` and fill correct values.
+Edit file `.env` and fill correct values.
 
 ### Load envrironment properties
 ```bash
 # Load env properties
-source .envrc
+source .env
 ```
 
 ### Deploy KEDA to cluster
@@ -63,12 +68,6 @@ helm repo update
 kubectl create namespace keda
 #Install keda Helm chart
 helm install keda kedacore/keda --namespace keda
-```
-
-### Download Functions source code
-```bash
-git clone git@github.com:pajikos/cloud-samples.git
-cd cloud-samples/azure-functions-in-k8s/simple_function_demo
 ```
 
 ## Deploying Azure Functions (non-durable function)
@@ -104,6 +103,7 @@ ROOT_CONNECTION_STRING=$(az servicebus namespace authorization-rule keys list --
 ### Test local run
 If the Azure Service Bus and queue successfully installed, you can run functions locally:
 ```bash
+cd simple_function_demo
 func start
 ```
 If no problem, successful output:
