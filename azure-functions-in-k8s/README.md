@@ -20,13 +20,6 @@ This tutorial shows how to deploy two simple examples of Azure Functions written
 * Azure cli (https://docs.microsoft.com/cs-cz/cli/azure/install-azure-cli)
 * Func cli (https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
-### Login to the Docker registry
-You need a Docker registry with push rights to be able to upload images with two functions.
-You have to be logged, here is an example when using Azure Container Registry:
-```bash
-# Auth with AAD accounts
-az acr login -n $ACR_NAME
-```
 ### Download Functions source code
 ```bash
 git clone git@github.com:pajikos/cloud-samples.git
@@ -40,6 +33,13 @@ Edit file `.env` and fill correct values.
 ```bash
 # Load env properties
 source .env
+```
+### Login to the Docker registry
+You need a Docker registry with push rights to be able to upload images with two functions.
+You have to be logged, here is an example when using Azure Container Registry:
+```bash
+# Auth with AAD accounts
+az acr login -n $ACR_NAME
 ```
 
 ### Deploy KEDA to cluster
